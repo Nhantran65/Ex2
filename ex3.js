@@ -16,7 +16,7 @@
         console.log(a+ " is equal to " +b);
     }
 
-//Task2
+//Task 2
     function task2(min,max){
         for(var i=min; i< max;i++ ){
             if(i%2==0){
