@@ -17,43 +17,77 @@
     }
 
 //Task 2
-    function task2(min,max){
-        for(var i=min; i< max;i++ ){
-            if(i%2==0){
-                for(var i=min; i<max; i++){
-                    return i;
-                }
-            }
-            else {
-                for(var i=min;i<max;i++){
-                    return i;
-                }
-            }
-            
-    
-        }
+function task2(min, max) {
+        
+    var evenNumber = [];
+  
+    var oddNumber = [];
+  
+    var result = [];
+  
+  
+    for (var i = min; i <= max; i++) {
+  
+      if (i % 2 === 0) {
+  
+        evenNumber.push(i);
+  
+      } else {
+  
+        oddNumber.push(i);
+  
+      }
+  
     }
-    console.log(task2(3,7));
-    //Task 3
-    function task3(min,max){
-        for(var i=min; i< max;i++ ){
-            var a=[];
-            if(i%2==0){
-                for(var i=min; i<max; i++){
-                    a.push(i);
-                }
-            }
-            else {
-                for(var i=min;i<max;i++){
-                    a.push(i);
-                }
-            }
-            return a;
+  
+    evenNumber.sort(function(a, b){return a-b});
+  
+    oddNumber.sort(function(a, b){return a-b});
+  
+    result = evenNumber.concat(oddNumber);
+  
+    console.log(result.join(" "));
+  
+  }
+  console.log(task2(3,7))
     
+      //Task 3
+    function task3(min, max) {
+        
+          var evenNumber = [];
+        
+          var oddNumber = [];
+        
+          var result = [];
+        
+        
+          for (var i = min; i <= max; i++) {
+        
+            if (i % 2 === 0) {
+        
+              evenNumber.push(i);
+        
+            } else {
+        
+              oddNumber.push(i);
+        
+            }
+        
+          }
+        
+          evenNumber.sort(function(a, b){return a-b});
+        
+          oddNumber.sort(function(a, b){return a-b});
+        
+          result = evenNumber.concat(oddNumber);
+        
+          console.log(result);
+        
         }
-    }
-    console.log(task3(3,7));
-    //Task 4
+        console.log(task3(3,7))
+    
+    
+        //Task 4
     function task4(string) {
         return string === string.split("").reverse().join("");
       }
