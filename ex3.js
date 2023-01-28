@@ -1,4 +1,4 @@
-//Task 1
+        //Task 1
     function task1(min, max){
         return Math.floor(Math.random()*(max-min+1)+min);
     }
@@ -16,7 +16,7 @@
         console.log(a+ " is equal to " +b);
     }
 
-//Task 2
+        //Task 2
 function task2(min, max) {     
     var evenNumber = [];
     var oddNumber = [];
