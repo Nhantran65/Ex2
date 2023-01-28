@@ -10,40 +10,30 @@
         console.log(a +" is less than "+ b);
     }
     else if(a>b){
-        console.log(a+" is greater than "+ b)
+        console.log(a+" is greater than "+ b);
     }
     else{
         console.log(a+ " is equal to " +b);
     }
 
 //Task 2
-function task2(min, max) {
-        
+function task2(min, max) {     
     var evenNumber = [];
-  
     var oddNumber = [];
-  
     var result = [];
-  
-  
+   
     for (var i = min; i <= max; i++) {
   
       if (i % 2 === 0) {
-  
         evenNumber.push(i);
-  
       } else {
-  
         oddNumber.push(i);
-  
       }
   
     }
   
     evenNumber.sort(function(a, b){return a-b});
-  
     oddNumber.sort(function(a, b){return a-b});
-  
     result = evenNumber.concat(oddNumber);
   
     console.log(result.join(" "));
@@ -54,31 +44,22 @@ function task2(min, max) {
       //Task 3
     function task3(min, max) {
         
-          var evenNumber = [];
-        
-          var oddNumber = [];
-        
-          var result = [];
-        
+          var evenNumber = [];      
+          var oddNumber = [];       
+          var result = [];      
         
           for (var i = min; i <= max; i++) {
         
-            if (i % 2 === 0) {
-        
-              evenNumber.push(i);
-        
-            } else {
-        
-              oddNumber.push(i);
-        
+            if (i % 2 === 0) {      
+              evenNumber.push(i);     
+            } else {   
+              oddNumber.push(i);    
             }
         
           }
         
-          evenNumber.sort(function(a, b){return a-b});
-        
-          oddNumber.sort(function(a, b){return a-b});
-        
+          evenNumber.sort(function(a, b){return a-b});       
+          oddNumber.sort(function(a, b){return a-b});       
           result = evenNumber.concat(oddNumber);
         
           console.log(result);
